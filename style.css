@@ -9,12 +9,12 @@ html, body {
     color: hsl(0, 0%, 100%);
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    min-height: 100dvh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    min-height: 100dvh;
 }
 
 .main-card {
@@ -24,43 +24,48 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 25rem;
-    height: 45rem;
+    width: clamp(16rem, 20rem, 28rem);
+    /* max-width: 26rem; */
+    max-height: 48rem;
+    margin: 1.5re 1.5rem 1.5rem 0;
+    padding: 1rem;
 }
 
 .profile-picture {
     border-radius: 50%;
-    width: 7rem;
-    margin: 2rem
+    width: 6rem;
+    margin: 1rem
 }
 
 .full-name {
     font-size: 1.7rem;
     font-weight: 400;
-    margin: 1rem;
+    margin: 0.6rem;
 }
 
 .location {
     color: hsl(75, 94%, 57%);
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .description {
     font-size: 14px;
-    margin: 2rem;
+    margin: 1.8rem 0 1.2rem;
+    letter-spacing: 0.03rem;
 }
 
 .buttons {
     background-color: hsl(0, 0%, 20%);
     color: hsl(0, 0%, 100%);
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     border: none;
     border-radius: 0.5rem;
-    width: 20rem;
-    height: 3.3rem;
-    margin: 0.4rem;
+    width: clamp(11rem, 17rem, 23rem);
+    /* min-width: 21rem; */
+    min-height: 3rem;
+    margin: 0.5rem 1.5rem;
 }
 
 .buttons:hover {
@@ -69,5 +74,6 @@ html, body {
     cursor: pointer;
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+
+/* .attribution { font-size: 11px; text-align: center; margin-top: 10px; }
+.attribution a { color: hsl(228, 45%, 44%); } */
